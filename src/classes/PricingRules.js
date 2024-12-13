@@ -8,7 +8,7 @@ export class PricingRules {
   applyRules(items) {
     let updatedItems = [...items];
 
-    // 3 for 2 deal on Unlimited 1GB Sims
+    // 3 for 2 deal on 1GB Sims
     updatedItems = this.applyThreeForTwo(updatedItems);
 
     // bulk discount for 5GB Sims
@@ -18,21 +18,21 @@ export class PricingRules {
   }
 
   /*
-    3 for 2 deal on Unlimited 1GB Sims
-    if you buy 3 Unlimited 1GB Sims, you will pay the price of 2 only for the first month
+    3 for 2 deal on 1GB Sims
+    if you buy 3 1GB Sims, you will pay the price of 2 only for the first month
   */
   applyThreeForTwo(items) {
-    // extract Unlimited 1GB items
+    // extract 1GB items
     const smallItems = items.filter(
       (item) => item.code === PRODUCTS.ULT_SMALL.code
     );
 
-    // if fewer than 3 Unlimited 1GB items, no promotion applies
+    // if fewer than 3 1GB items, no promotion applies
     if (smallItems.length < 3) {
       return items;
     }
 
-    // extract other items that are NOT Unlimited 1GB
+    // extract other items that are NOT 1GB
     const otherItems = items.filter(
       (item) => item.code !== PRODUCTS.ULT_SMALL.code
     );
@@ -53,7 +53,7 @@ export class PricingRules {
   }
 
   /*
-    The Unlimited 5GB Sim will have a bulk discount applied;
+    The 5GB Sim will have a bulk discount applied;
     whereby the price will drop to $39.90 each for the first month, if the customer buys more than 3
   */
   applyBulkDiscountForLargeItems(items) {
