@@ -39,7 +39,7 @@ export class ShoppingCart {
     // returns the unmodified subtotal if a promo code is NOT provided
     const finalTotal = this.pricingRules.applyPromoCodeDiscount(subtotal);
 
-    return Number(finalTotal).toFixed(2);
+    return `$${Number(finalTotal).toFixed(2)}`;
   }
 
   /*
