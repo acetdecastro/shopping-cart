@@ -13,6 +13,7 @@ export const PRODUCTS = {
     code: "ult_large",
     name: "Unlimited 5GB",
     price: 44.9,
+    bulkDiscountPrice: 39.9,
   },
   DATA_PACK: {
     code: "1gb",
