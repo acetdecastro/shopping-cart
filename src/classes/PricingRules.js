@@ -8,7 +8,7 @@ export class PricingRules {
   applyRules(items) {
     let updatedItems = [...items];
 
-    // 3 for 2 deal on 1GB sims
+    // 3-for-2 deal on 1GB sims
     updatedItems = this.applyThreeForTwo(updatedItems);
 
     // bulk discount for 5GB sims
