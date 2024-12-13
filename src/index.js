@@ -28,7 +28,7 @@ function scenario2() {
   cart.add(PRODUCTS.ULT_LARGE.code);
   cart.add(PRODUCTS.ULT_LARGE.code);
 
-  console.log("\nScenario 2: 5GB bulk discount");
+  console.log("\nScenario 2: 5GB sims bulk discount");
   console.log("Cart Total:", cart.total());
   console.log("Cart Items:", cart.items());
 }
@@ -42,7 +42,7 @@ function scenario3() {
   cart.add(PRODUCTS.ULT_MEDIUM.code);
   cart.add(PRODUCTS.ULT_MEDIUM.code);
 
-  console.log("\nScenario 3: 2GB + free Data Pack");
+  console.log("\nScenario 3: 2GB sims + free Data Pack");
   console.log("Cart Total:", cart.total());
   console.log("Cart Items:", cart.items());
 }
