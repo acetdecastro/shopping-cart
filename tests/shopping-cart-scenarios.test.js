@@ -57,7 +57,7 @@ describe("Shopping Cart Scenarios", () => {
     expect(cart.items()).toEqual(["1 x Unlimited 1GB", "1 x 1 GB Data-pack"]);
   });
 
-  test("Provide an invalid product code", () => {
+  test("Add an invalid product code", () => {
     const pricingRules = new PricingRules();
     const cart = new ShoppingCart(pricingRules);
 
@@ -66,7 +66,7 @@ describe("Shopping Cart Scenarios", () => {
     }).toThrow("Invalid product code");
   });
 
-  test("Provide an invalid promo code", () => {
+  test("Add an invalid promo code", () => {
     const pricingRules = new PricingRules();
     const cart = new ShoppingCart(pricingRules);
 
