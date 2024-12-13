@@ -17,6 +17,12 @@ export class ShoppingCart {
 
     this.cartItems.push({ ...product });
 
+    // add free data pack when adding a 2GB/ULT_MEDIUM product
+    if (product.code === PRODUCTS.ULT_MEDIUM.code) {
+      const dataPack = { ...PRODUCTS.DATA_PACK, price: 0 };
+      this.cartItems.push(dataPack);
+    }
+
     // set a promo code if it is provided
     if (promoCode) this.pricingRules.setPromoCode(promoCode);
   }
