@@ -19,9 +19,13 @@ const cart = new ShoppingCart(pricingRules);
 // cart.add(PRODUCTS.ULT_LARGE.code);
 
 // 2GB + free Data Pack
+// cart.add(PRODUCTS.ULT_SMALL.code);
+// cart.add(PRODUCTS.ULT_MEDIUM.code);
+// cart.add(PRODUCTS.ULT_MEDIUM.code);
+
+// Promo code applied
 cart.add(PRODUCTS.ULT_SMALL.code);
-cart.add(PRODUCTS.ULT_MEDIUM.code);
-cart.add(PRODUCTS.ULT_MEDIUM.code);
+cart.add(PRODUCTS.DATA_PACK.code, PROMOS.I_LOVE_AMAYSIM.code);
 
 console.log("Cart Total:", cart.total());
 console.log("Cart Items:", cart.items());
