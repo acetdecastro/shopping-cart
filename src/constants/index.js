@@ -1,2 +1,2 @@
-export { PRODUCTS } from "./products";
-export { PROMOS } from "./promos";
+export { PRODUCTS } from "./products.js";
+export { PROMOS } from "./promos.js";
