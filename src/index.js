@@ -11,12 +11,17 @@ const cart = new ShoppingCart(pricingRules);
 // cart.add(PRODUCTS.ULT_LARGE.code);
 
 // 5GB bulk discount
+// cart.add(PRODUCTS.ULT_SMALL.code);
+// cart.add(PRODUCTS.ULT_SMALL.code);
+// cart.add(PRODUCTS.ULT_LARGE.code);
+// cart.add(PRODUCTS.ULT_LARGE.code);
+// cart.add(PRODUCTS.ULT_LARGE.code);
+// cart.add(PRODUCTS.ULT_LARGE.code);
+
+// 2GB + free Data Pack
 cart.add(PRODUCTS.ULT_SMALL.code);
-cart.add(PRODUCTS.ULT_SMALL.code);
-cart.add(PRODUCTS.ULT_LARGE.code);
-cart.add(PRODUCTS.ULT_LARGE.code);
-cart.add(PRODUCTS.ULT_LARGE.code);
-cart.add(PRODUCTS.ULT_LARGE.code);
+cart.add(PRODUCTS.ULT_MEDIUM.code);
+cart.add(PRODUCTS.ULT_MEDIUM.code);
 
 console.log("Cart Total:", cart.total());
 console.log("Cart Items:", cart.items());
